@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Rohit Sangem</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>I'm a passionate <span id="typing-animation"></span></h2>
+      
+      <script>
+
+        // Initialize the typing animation
+        const typingAnimationElement = document.getElementById('typing-animation');
+
+        // Create an array of typing text
+        const typingTexts = [
+        'Data Analyst   ',
+        'Data Engineer  ',
+         'Data Scientist'
+        ];
+
+        // Create a function to display the typing animation for a given text
+        function playTypingAnimation(text) {
+        // Loop through each character and add it to the element
+        for (let i = 0; i < text.length; i++) {
+          setTimeout(() => {
+          typingAnimationElement.textContent += text[i];
+          }, i * 200); // Increase the delay to slow down the typing animation
+        }
+
+        // Once the animation is complete, reset the text and start over
+        setTimeout(() => {
+          typingAnimationElement.textContent = '';
+          playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+        }, text.length * 200);
+        }
+
+        // Start the typing animation loop
+        playTypingAnimation(typingTexts[0]);
+
+        </script>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <!-- <li><a class="nav-link" href="#blogs">Blogs</a></li> -->
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/rohitsangem/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/rsangem7" class="github"><i class="bi bi-github"></i></a>
+        
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>About Me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets\img\Profileimages\Rohit_Profile.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Hello,</h3>
+          <p>
+            Data professional with 4+ years of experience delivering analytics, machine learning, and data engineering solutions across finance, logistics, and cybersecurity domains. Proficient in Python, SQL, Power BI, and cloud data platforms, with hands-on experience building ETL pipelines, predictive models, scalable dashboards, and AI-driven knowledge systems. Experience on translating complex data into actionable insights that improve operational efficiency and support strategic decision-making through cross-functional collaboration
+          </p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">SQL <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Python <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Data Visualization  (Power BI/Tableau)<i class="val">98%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Big Data <i class="val">92%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Machine Learning <i class="val">88%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Statistical Analysis <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= 
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-file-type-sql" style="color: #ffbb2c;"></i>
+            <h3>Lorem Ipsum</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+            <h3>Dolor Sitema</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+            <h3>Sed perspiciatis</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+            <h3>Magni Dolores</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+            <h3>Nemo Enim</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+            <h3>Eiusmod Tempor</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+            <h3>Midela Teren</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+            <h3>Pira Neve</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-anchor-line" style="color: #b2904f;"></i>
+            <h3>Dirada Pack</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-disc-line" style="color: #b20969;"></i>
+            <h3>Moton Ideal</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-base-station-line" style="color: #ff5828;"></i>
+            <h3>Verdo Park</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+            <h3>Flavor Nivelanda</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>-->
+
+    <!-- ======= Testimonials ======= -->
+    <div class="testimonials container">
+
+      <div class="section-title">
+        <h2>Recommendations</h2>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               Rohit is a highly dependable data analyst with strong SQL, 
+               Python, and Power BI skills. During our work at TCS, he consistently 
+               translated complex trading and risk data into clear, actionable insights 
+               for business and leadership teams. His ownership mindset and ability 
+               to deliver under pressure made him a valuable asset to the project.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/sachin.jpg" class="testimonial-img" alt="">
+              <h3>Parag Shanbag</h3>
+              <h4>Project Manager</h4>
+              <h4>Tata Consultancy Services</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Rohit demonstrated excellent analytical thinking and 
+                attention to detail during his time supporting cybersecurity and audit analytics. 
+                He quickly understood risk frameworks, identified control gaps using data, 
+                and delivered clear dashboards that significantly improved audit efficiency. 
+                His ability to bridge technical data with compliance needs stood out.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Rituparna Bhise</h3>
+              <h4>Head of Internal IT Audit</h4>
+              <h4>Société Générale</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Rohit was a strong student with a solid grasp of database concepts, 
+                SQL optimization, and data modeling fundamentals. He consistently applied 
+                theoretical knowledge to real-world problem solving and showed curiosity 
+                beyond the curriculum. His analytical discipline and structured thinking 
+                are well suited for advanced data roles.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/prafull.jpg" class="testimonial-img" alt="">
+              <h3>Amit Kukareja</h3>
+              <h4>Head of Department</h4>
+              <h4>University of Mumbai</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          
+
+          
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="owl-carousel testimonials-carousel">
+
+      </div>
+
+    </div><!-- End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Rohit Sangem</h4>
+            <p><em>Data enthusiast with 3+ years of experience in transforming raw data into meaningful insights. I enjoy working under tight deadlines and building efficient data solutions that drive real impact. Let’s turn your data into smarter decisions!
+
+</em></p>
+            <p>
+            <ul>
+              
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Master of Science</h4>
+            <h5>August 2023 - December 2024</h5>
+            <p><em>University of Maryland, Robert H. Smith School of Business, College Park, MD, USA</em></p>
+            <p>Information Systems </p>
+          </div>
+          <div class="resume-item">
+            <h4>Bachelor of Technology</h4>
+            <h5>August 2016 - May 2020</h5>
+            <p><em>KJ Somaiya Institute of Engineering and Information Technology, Mumbai, MH, India</em></p>
+            <p>Electronics and Telecommunication</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+
+          <div class="resume-item">
+            <h4>Fleet Data Analyst </h4>
+            <h5>June 2025 - Present</h5>
+            <p><em>DHL Express, Plantation, Florida</em></p>
+          </div>
+
+          <div class="resume-item">
+            <h4>Data Analyst (Intern)</h4>
+            <h5>June 2024 - August 2024</h5>
+            <p><em>Societe Generale, Jersey City, NJ, USA </em></p>
+            
+          </div>
+          <div class="resume-item">
+            <h4>Data Scientist Researcher</h4>
+            <h5>January 2024 - June 2024</h5>
+            <p><em>University of Maryland, College Park, MD, USA</em></p>
+            
+          </div>
+
+          <div class="resume-item">
+            <h4>Data Analyst</h4>
+            <h5>April 2021 - June 2023</h5>
+            <p><em>Tata Consultancy Services (Client: Bombay Stock Exchange), Mumbai, India</em></p>
+            
+          </div>
+
+          <div class="resume-item">
+            <h4>Data Analyst</h4>
+            <h5>January 2020  - Feb 2021</h5>
+            <p><em>Globaltek Prosolutions (Client: JP Morgan Chase), Bangalore, India</em></p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Blogs Section ======= -->
+  <!--<section id="blogs" class="blogs">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Blogs</h2>
+        <p>My Blogs</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="https://www.notion.so/The-Transformative-Power-of-AI-and-ML-Shaping-the-Future-226fa46054a140b19fc10480b44c2e45?pvs=4">AI Revolution</a></h4>
+            <p>Transforming industries and enhancing daily life through cutting-edge technology</p>
+          </div>
+        </div>-->
+        <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          </div>
+        </div>
+-->
+        
+     <!-- </div>
+
+    </div>
+  </section>--><!-- End Blogs Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-viz">Visualization</li>
+            <li data-filter=".filter-ML">Machine Learning</li>
+            <!-- <li data-filter=".filter-bd">Big Data</li> -->
+            
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-ML">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/GenAI.gif" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>GenAI ChatBot for Airlines</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/GenAI.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="GenAI ChatBot"><i class="bx bx-plus"></i></a>
+                <a href="GenAI_Chatbot.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/rsangem7/GenAI-ChatBot-For-Airlines"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-viz">
+          <div class="portfolio-wrap">
+            <img src="assets\img\portfolio\supplychainanalysisimg.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Supply Chain Analysis</h4>
+              <div class="portfolio-links">
+                <a href="assets\img\portfolio\supplychain.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Supply Chain Analysis"><i class="bx bx-plus"></i></a>
+                <a href="SupplyChain-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                <!-- <a href="https://github.com/Divyasakhare07/Data-Visualizations/tree/main/Supply%20chain"><i class="bx bxl-github"></i></a> -->
+              <!-- </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-viz">
+          <div class="portfolio-wrap">
+            <img src="assets\img\portfolio\electricvehicle.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Electric Vehicle Analysis</h4>
+              <div class="portfolio-links">
+                <a href="assets\img\portfolio\electricvehicle.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Electric Vehicle Dashboard"><i class="bx bx-plus"></i></a>
+                <!-- <a href="ElectricVehicle-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                <!-- <a href="https://github.com/Divyasakhare07/Data-Visualizations/tree/main/electric%20vehicles"><i class="bx bxl-github"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-viz">
+          <div class="portfolio-wrap">
+            <img src="assets\img\portfolio\BankLoan.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Bank Loan Analysis</h4>
+              <div class="portfolio-links">
+                <a href="assets\img\portfolio\Salesforce.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bank Loan Analysis"><i class="bx bx-plus"></i></a>
+                <a href="SalesforceCase-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/rsangem7/Bank-Loan-Analysis"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-viz">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/US_Dollar.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Uncovering US Dollar</h4>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/US_Dollar.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Uncovering US Dollar"><i class="bx bx-plus"></i></a>
+                <a href="stockprice-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://public.tableau.com/app/profile/rohit.mahendra.sangem/viz/UncoveringtheUSDollar_17290941367510/Story1"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-ML">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/PII.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>PII Redaction</h4>
+            
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/PII_demo.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PII Redaction Demo"><i class="bx bx-plus"></i></a>
+                <a href="PII-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/Divyasakhare07/Bulls-TadHacks24"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-viz">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/Car_Accidents.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Road Accident Analytics</h4>
+              
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/roadanimation.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Road Accident Analytics demo"><i class="bx bx-plus"></i></a>
+                <a href="roadaccident-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://app.powerbi.com/groups/35932b90-5b9b-4573-bdce-736f849bec46/reports/681884ba-c8eb-43f7-823c-e47c1428a075/ReportSection?experience=power-bi"><i class="bx bxl-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div> 
+    </div>
+  </section> <!-- End Portfolio Section-->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>Address</h3>
+            <p>Plantation, FL 33324</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/rohitsangem/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/rsangem7" class="github"><i class="bi bi-github"></i></a>
+              
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p>sangemrohit@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Phone</h3>
+            <p>+1 (571) 456-0978</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!--<div class="credits">-->
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+    <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  </div>-->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
